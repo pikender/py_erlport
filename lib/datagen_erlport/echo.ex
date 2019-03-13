@@ -61,7 +61,7 @@ defmodule DatagenErlport.Echo do
     {:stop, {:port_terminated, reason}, state}
   end
 
-  def terminate({:port_terminated, _reason}, %{port: port} = _state) do
+  def terminate({:port_terminated, _reason}, %{port: _port} = _state) do
     :ok
   end
 
